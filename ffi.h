@@ -351,7 +351,7 @@ __declspec(align(16))
 #endif
 struct cdata {
     const struct ctype type
-#ifdef __GNUC__
+#if 0 /* #ifdef __GNUC__ */
       __attribute__ ((aligned(16)))
 #endif
       ;
